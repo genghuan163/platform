@@ -7,9 +7,8 @@ import com.apache.platform.model.TOrders;
 import com.apache.platform.service.IOrderService;
 import com.apache.platform.vo.OrderListVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.fasterxml.jackson.databind.util.BeanUtil;
-import net.sf.cglib.beans.BeanCopier;
 import org.springframework.beans.BeanUtils;
+import org.springframework.cglib.beans.BeanCopier;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
