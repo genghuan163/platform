@@ -16,6 +16,8 @@ import java.util.Date;
 public class TCoupon extends BaseEntity implements Serializable {
 
 
+    private Long userId;
+
     private String name;
 
     private BigDecimal amount;

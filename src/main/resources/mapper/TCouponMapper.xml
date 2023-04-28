@@ -9,6 +9,7 @@
     <result column="price" jdbcType="DECIMAL" property="price" />
     <result column="sum_price" jdbcType="DECIMAL" property="sumPrice" />
     <result column="count" jdbcType="INTEGER" property="count" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="deleted" jdbcType="BIT" property="deleted" />
     <result column="version" jdbcType="INTEGER" property="version" />
     <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
