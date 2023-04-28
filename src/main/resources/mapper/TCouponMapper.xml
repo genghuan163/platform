@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.apache.platform.dao.TOrdersMapper">
-  <resultMap id="BaseResultMap" type="com.apache.platform.model.TOrders">
+<mapper namespace="com.apache.platform.dao.TCouponMapper">
+  <resultMap id="BaseResultMap" type="com.apache.platform.model.TCoupon">
     <id column="id" jdbcType="BIGINT" property="id" />
-    <result column="user_id" jdbcType="INTEGER" property="userId" />
-    <result column="total" jdbcType="DECIMAL" property="total" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="product_id" jdbcType="BIGINT" property="productId" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="sum_price" jdbcType="DECIMAL" property="sumPrice" />
     <result column="count" jdbcType="INTEGER" property="count" />
-    <result column="order_status" jdbcType="INTEGER" property="orderStatus" />
-    <result column="discount" jdbcType="DECIMAL" property="discount" />
-    <result column="coupon_id" jdbcType="BIGINT" property="couponId" />
     <result column="deleted" jdbcType="BIT" property="deleted" />
-    <result column="version" jdbcType="BIGINT" property="version" />
+    <result column="version" jdbcType="INTEGER" property="version" />
     <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
     <result column="created_date" jdbcType="TIMESTAMP" property="createdDate" />
     <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />

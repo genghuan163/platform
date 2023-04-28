@@ -5,8 +5,12 @@
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="order_id" jdbcType="BIGINT" property="orderId" />
     <result column="product_id" jdbcType="BIGINT" property="productId" />
-    <result column="quantity" jdbcType="BIGINT" property="quantity" />
+    <result column="product_name" jdbcType="VARCHAR" property="productName" />
     <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="sum_price" jdbcType="DECIMAL" property="sumPrice" />
+    <result column="order_status" jdbcType="INTEGER" property="orderStatus" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="count" jdbcType="INTEGER" property="count" />
     <result column="deleted" jdbcType="BIT" property="deleted" />
     <result column="version" jdbcType="INTEGER" property="version" />
     <result column="created_by" jdbcType="VARCHAR" property="createdBy" />
@@ -14,5 +18,4 @@
     <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
     <result column="updated_date" jdbcType="TIMESTAMP" property="updatedDate" />
   </resultMap>
-
 </mapper>

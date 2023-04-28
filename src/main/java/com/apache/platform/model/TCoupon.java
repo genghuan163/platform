@@ -8,23 +8,25 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TProducts extends BaseEntity implements Serializable {
+public class TCoupon extends BaseEntity implements Serializable {
+
 
     private String name;
 
-    private String description;
+    private BigDecimal amount;
 
-    private String imageUrl;
+    private BigDecimal meetAmount;
 
-    private BigDecimal price;
+    private Date startTime;
 
-    private Integer categoryId;
+    private Date endTime;
 
-    private String categoryName;
+    private Integer usedStatus;
 
-    private Integer count;
+    private String number;
 }

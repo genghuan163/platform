@@ -13,11 +13,21 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 public class TOrderItems extends BaseEntity implements Serializable {
+
     private Long orderId;
 
     private Long productId;
 
-    private Long quantity;
+    private String productName;
 
     private BigDecimal price;
+
+    private BigDecimal sumPrice;
+
+    private Integer orderStatus;
+
+    private Long userId;
+
+    private Integer count;
+
 }

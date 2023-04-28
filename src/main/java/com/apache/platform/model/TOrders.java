@@ -13,9 +13,16 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Builder
 public class TOrders extends BaseEntity implements Serializable {
-
-
-    private Integer userId;
+    private Long userId;
 
     private BigDecimal total;
+
+    private Integer count;
+
+    private Integer orderStatus;
+
+    private Integer discount;
+
+    private Integer couponId;
+
 }
