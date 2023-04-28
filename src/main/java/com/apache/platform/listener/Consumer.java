@@ -7,7 +7,7 @@ import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RocketMQMessageListener(topic = JmsConfig.SECKILL_TOPIC,consumerGroup = "anran-producer-group")
+@RocketMQMessageListener(topic = JmsConfig.SECKILL_TOPIC,consumerGroup = "seckill-consumer-group")
 public class Consumer implements RocketMQListener<String> {
 
 

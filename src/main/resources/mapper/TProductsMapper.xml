@@ -7,6 +7,7 @@
     <result column="description" jdbcType="VARCHAR" property="description" />
     <result column="image_url" jdbcType="VARCHAR" property="imageUrl" />
     <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="count" jdbcType="INTEGER" property="count" />
     <result column="category_id" jdbcType="INTEGER" property="categoryId" />
     <result column="deleted" jdbcType="BIT" property="deleted" />
     <result column="version" jdbcType="INTEGER" property="version" />
