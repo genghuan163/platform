@@ -55,6 +55,7 @@ CREATE TABLE `t_coupon` (
   `end_time` datetime NOT NULL,
   `used_status` int NOT NULL DEFAULT '0' COMMENT '券状态',
   `number` varchar(50) DEFAULT NULL COMMENT '券码',
+  `user_id` bigint NOT NULL COMMENT '用户id',
   `deleted` tinyint(1) NOT NULL DEFAULT '0' COMMENT '逻辑删除标志',
   `version` int NOT NULL DEFAULT '0' COMMENT '版本号',
   `created_by` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '创建人',
